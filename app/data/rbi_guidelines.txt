@@ -1,0 +1,58 @@
+RBI GUIDELINES FOR FIXED DEPOSITS — KEY RULES EVERY INVESTOR SHOULD KNOW
+
+SECTION 1: DICGC DEPOSIT INSURANCE
+The Deposit Insurance and Credit Guarantee Corporation (DICGC), a wholly-owned subsidiary of the Reserve Bank of India, insures deposits at all DICGC-registered banks. This includes all scheduled commercial banks, small finance banks, regional rural banks, cooperative banks, and local area banks. NBFCs are NOT covered.
+
+Coverage limit: Each depositor is insured up to ₹5,00,000 (five lakh rupees) per bank. This limit covers the total of all deposits held in the same name at the same bank — including savings, current, recurring, and fixed deposits — combining both principal AND interest. The ₹5 lakh limit was enhanced from ₹1 lakh to ₹5 lakh in February 2020.
+
+Practical implication for investors: If you have ₹8 lakh in FDs in one bank, only ₹5 lakh is insured. To be fully protected, split deposits across multiple banks, keeping each bank's total under ₹5 lakh. Example: ₹5 lakh in SBI + ₹5 lakh in HDFC = ₹10 lakh fully insured.
+
+The DICGC insurance is free — banks pay the premium (0.12 paise per ₹100 of deposits per year) on your behalf.
+---
+SECTION 2: TDS (TAX DEDUCTED AT SOURCE) RULES
+Banks are legally required to deduct Tax Deducted at Source (TDS) on FD interest. Key rules:
+
+TDS threshold for regular depositors: If your interest income from FDs at a single bank exceeds ₹40,000 in a financial year, the bank deducts 10% TDS. This threshold was raised from ₹10,000 to ₹40,000 in Budget 2019.
+
+TDS threshold for senior citizens (age 60+): The threshold is ₹50,000 per year per bank. Senior citizens earning less than ₹50,000 annual FD interest at one bank pay no TDS.
+
+Higher TDS without PAN: If you have not submitted your PAN to the bank, TDS is deducted at 20% instead of 10%. Always link your PAN with your FD account.
+
+TDS does not mean full tax payment: TDS is an advance tax deduction. If your total income is below the taxable limit, you can claim a refund of TDS when filing your income tax return. If you are in a higher tax bracket, you may owe additional tax beyond the TDS already deducted.
+
+Avoiding TDS — Form 15G and 15H: If your total annual income (including FD interest) is expected to be below the basic exemption limit, you can submit Form 15G (for those below 60 years) or Form 15H (for senior citizens 60+) to your bank at the start of every financial year. This instructs the bank not to deduct TDS. These forms must be submitted at each bank where you hold FDs, and must be renewed every financial year (April to March).
+---
+SECTION 3: PREMATURE WITHDRAWAL RULES
+RBI mandates that banks must allow premature withdrawal of FDs, but banks are permitted to impose a penalty. Key rules:
+
+Minimum lock-in: For most FDs, the minimum period before premature withdrawal is 7 days. FDs withdrawn within 7 days earn no interest.
+
+Penalty structure: Banks typically levy a penalty of 0.5% to 1% on premature withdrawals. This means the applicable interest rate is reduced by the penalty percentage. Example: If your FD is at 8% for 1 year and you break it after 6 months, the 6-month rate minus 1% penalty applies — you might receive ~5.5-6% for the period held.
+
+Post Office FDs: Cannot be withdrawn before 6 months under any circumstances. After 6 months, premature withdrawal is allowed with penalty.
+
+NBFCs: Some NBFCs like Shriram Finance have stricter premature withdrawal terms and higher penalties (up to 2%). Always read the terms before investing.
+
+Exceptions: In case of death of the depositor, banks must pay the maturity amount to the nominee without any premature withdrawal penalty.
+---
+SECTION 4: NOMINATION RULES
+RBI strongly encourages nomination for all FD accounts. Key rules:
+
+Single nominee only: Each FD can have only one nominee. You cannot nominate multiple people for one FD.
+
+Who can be a nominee: Any individual — family member, friend, or any trusted person. Minors can be nominees with a guardian specified.
+
+Importance: Without nomination, in the event of the depositor's death, the legal heirs must go through a lengthy legal process (succession certificate) to claim the FD. With nomination, the nominee can claim the amount quickly with minimal paperwork.
+
+Changing nominee: You can change the nominee at any time by visiting the bank branch and filling a simple form.
+
+Nomination is not succession: The nominee is only a trustee — they are obligated to distribute the money among the legal heirs as per the depositor's will or inheritance laws. A nominee has no legal ownership of the FD proceeds.
+---
+SECTION 5: INTEREST TAXATION
+FD interest income is categorized as "Income from Other Sources" under the Income Tax Act and is taxable at your applicable income tax slab rate — not at a flat rate. A person in the 30% tax bracket effectively earns less from an FD than someone in the nil or 5% bracket with the same interest rate. For example: 8.5% FD for a person in the 30% slab gives a post-tax return of only about 5.9%.
+
+Section 80C exception: Only 5-year tax-saving FDs with banks qualify for Section 80C deduction (up to ₹1.5 lakh). Regular FDs do not. Post Office 5-year Time Deposits also qualify for 80C.
+---
+SECTION 6: SENIOR CITIZEN BENEFITS
+Banks are encouraged (but not mandated) by RBI to offer preferential interest rates to senior citizens. In practice, most banks offer 0.25% to 0.75% extra per annum to depositors aged 60 and above. Some banks offer additional premium to "super senior citizens" (aged 80+). Senior citizens should always specifically request the senior citizen rate when opening an FD.
+---

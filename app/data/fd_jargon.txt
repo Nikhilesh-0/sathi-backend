@@ -1,0 +1,100 @@
+TERM: p.a. (per annum)
+PLAIN: "p.a." means "per year" — it tells you how much interest the bank pays annually. If a bank offers 8% p.a., it means for every ₹100 you deposit, you earn ₹8 every year. A ₹1,00,000 FD at 8% p.a. earns ₹8,000 per year.
+HINDI_HINT: प्रति वर्ष (ब्याज दर)
+---
+TERM: tenor
+PLAIN: Tenor is the length of time your money is locked in the FD. It's the duration of your fixed deposit — from the day you invest to the day you get your money back with interest. Common tenors are 6 months, 1 year, 2 years, or 5 years.
+HINDI_HINT: अवधि (कितने समय के लिए)
+---
+TERM: cumulative FD
+PLAIN: In a cumulative FD, the bank does NOT pay you interest every month or quarter. Instead, it adds the interest back to your deposit (this is called compounding) and pays you everything together at the end. This is best for people who don't need regular income — your money grows faster because interest earns interest. For example, ₹1 lakh at 8% cumulative for 2 years gives you about ₹1,17,000 at maturity.
+HINDI_HINT: संचयी FD (ब्याज अंत में मिलता है)
+---
+TERM: non-cumulative FD
+PLAIN: In a non-cumulative FD, the bank pays you interest at regular intervals — monthly, quarterly, or annually — directly to your bank account. This is ideal for retired people or anyone who needs a regular monthly income. The total interest earned is slightly less than cumulative because the interest is paid out instead of compounding.
+HINDI_HINT: गैर-संचयी FD (ब्याज हर महीने/तिमाही मिलता है)
+---
+TERM: maturity amount
+PLAIN: The maturity amount is the total money you receive when your FD completes its tenor — it includes your original investment (principal) plus all the interest earned. For a ₹50,000 FD at 8% for 1 year, the maturity amount would be approximately ₹54,000.
+HINDI_HINT: परिपक्वता राशि (FD पूरी होने पर मिलने वाला पैसा)
+---
+TERM: principal
+PLAIN: Principal is the original amount of money you invest in the FD — it does NOT include any interest. If you open an FD for ₹25,000, your principal is ₹25,000. The bank pays interest on this principal amount.
+HINDI_HINT: मूलधन (आपका लगाया हुआ पैसा)
+---
+TERM: interest rate
+PLAIN: The interest rate is the percentage the bank pays you for keeping your money with them. It's always quoted as "per annum" (per year). A higher interest rate means more earnings. If rate is 7.5%, a ₹10,000 FD earns ₹750 in one year. Small finance banks typically offer higher rates (8-9%) than large banks (6.8-7.5%).
+HINDI_HINT: ब्याज दर (बैंक कितना प्रतिशत देगा)
+---
+TERM: TDS (Tax Deducted at Source)
+PLAIN: TDS is tax the bank automatically deducts from your FD interest before paying you. If your total FD interest from one bank is more than ₹40,000 in a financial year (₹50,000 for senior citizens), the bank must deduct 10% tax and send it to the government on your behalf. You can claim this as credit when you file your income tax return. TDS does NOT mean you've paid all your tax — you may owe more or get a refund depending on your income slab.
+HINDI_HINT: स्रोत पर कर कटौती (बैंक सीधे काट लेता है)
+---
+TERM: Form 15G/15H
+PLAIN: Form 15G (for people below 60 years) and Form 15H (for senior citizens) are self-declaration forms you submit to your bank to request that NO TDS be deducted from your FD interest. You can submit these if your total annual income is below the taxable limit (₹2.5 lakh for general, ₹3 lakh for seniors). Submit these at the start of every financial year. It's free and simple — ask at your bank branch.
+HINDI_HINT: टीडीएस बचाने का फॉर्म
+---
+TERM: premature withdrawal
+PLAIN: Premature withdrawal means closing your FD before its tenor ends. Banks generally allow this but usually charge a penalty of 0.5% to 2% — meaning you get a slightly lower interest rate than originally promised. For example, if you have a 12-month FD at 8% but close it after 6 months, you might only get 7% for those 6 months. Only close early if absolutely necessary.
+HINDI_HINT: समय से पहले FD तोड़ना (पेनल्टी लगती है)
+---
+TERM: penalty
+PLAIN: Penalty in FD context is the reduction in interest rate charged by the bank when you break your FD before maturity. Typical penalty is 0.5% to 2% of the applicable interest rate. Post Office FDs cannot be broken before 6 months at all. NBFCs like Shriram Finance may charge up to 2% penalty. Always check the penalty clause before investing.
+HINDI_HINT: जुर्माना (समय से पहले तोड़ने पर)
+---
+TERM: DICGC insurance
+PLAIN: DICGC (Deposit Insurance and Credit Guarantee Corporation) is an RBI subsidiary that insures your bank deposits. If a bank fails or goes bankrupt, DICGC guarantees you get back up to ₹5 lakh of your deposits (principal + interest combined) per bank. This means if you have ₹5 lakh in FDs across different accounts in the SAME bank, all of it is insured. If you have ₹10 lakh in one bank, only ₹5 lakh is covered. Spread deposits across banks if amount exceeds ₹5 lakh. Note: NBFCs are NOT covered by DICGC — only scheduled commercial banks and small finance banks are.
+HINDI_HINT: सरकारी बीमा (₹5 लाख तक सुरक्षित)
+---
+TERM: nomination
+PLAIN: Nomination means telling your bank who should receive your FD money if you pass away. You can nominate one person (typically a family member). It's strongly recommended and simple to do at the time of opening the FD. Without a nominee, your family may face legal difficulties claiming the money after your death. You can change your nominee anytime.
+HINDI_HINT: नामांकन (FD का वारिस)
+---
+TERM: KYC
+PLAIN: KYC means "Know Your Customer" — it's the process banks use to verify your identity. For an FD, you need to submit Aadhaar card, PAN card, and sometimes a passport photo. It's a one-time process per bank. If you already have a savings account, your KYC is usually already done. Without KYC, banks legally cannot accept your deposit.
+HINDI_HINT: पहचान सत्यापन (आधार + पैन)
+---
+TERM: PAN
+PLAIN: PAN (Permanent Account Number) is a 10-character alphanumeric code (like ABCDE1234F) issued by the Income Tax Department. It's mandatory for FDs — the bank needs it to report your interest income to the government and deduct TDS correctly. Without PAN, banks deduct 20% TDS instead of 10%. Your PAN links all your financial transactions for income tax purposes.
+HINDI_HINT: पैन कार्ड (आयकर पहचान)
+---
+TERM: senior citizen rate
+PLAIN: Most banks offer an extra 0.25% to 0.75% interest rate for senior citizens (age 60 and above) on FDs. So if the regular rate is 7%, seniors might get 7.5%. This is a significant benefit — on ₹5 lakh for 1 year, that extra 0.5% means ₹2,500 more interest. Always ask for the senior citizen rate when opening an FD if you qualify.
+HINDI_HINT: वरिष्ठ नागरिक दर (60+ के लिए अतिरिक्त ब्याज)
+---
+TERM: sweep-in FD
+PLAIN: A sweep-in FD is a special type linked to your savings account. When your savings account balance exceeds a threshold (say ₹25,000), the extra money automatically creates an FD. When you need money, the FD automatically "sweeps in" to cover your withdrawals. You get higher FD interest on idle money while still having full liquidity. SBI, HDFC, and ICICI all offer sweep-in FDs.
+HINDI_HINT: स्वचालित FD (बचत खाते से जुड़ी)
+---
+TERM: auto-renewal
+PLAIN: Auto-renewal means your FD automatically starts a new term when the current one matures, without any action from you. The bank renews it at whatever interest rate is current on that date — which could be higher or lower than your original rate. Always check whether your FD has auto-renewal and monitor the maturity date so you can decide whether to renew or withdraw.
+HINDI_HINT: स्वतः नवीनीकरण (अपने आप आगे बढ़ता है)
+---
+TERM: interest payout frequency
+PLAIN: This refers to how often the bank pays you interest — monthly, quarterly (every 3 months), half-yearly, or annually. Monthly payout is best for those needing regular income. Quarterly payout is most common. Annual payout gives slightly higher effective return because the bank keeps the interest longer. Cumulative FDs don't pay out — they compound and pay at maturity.
+HINDI_HINT: ब्याज भुगतान की आवृत्ति
+---
+TERM: compounding
+PLAIN: Compounding means earning interest on your interest. With simple interest, you earn ₹800 per year on ₹10,000 at 8%. With compound interest (quarterly), your interest itself earns interest — so year 1 gives you slightly more than ₹800. Over 5 years, the difference can be thousands of rupees. All cumulative FDs use compound interest, typically compounded quarterly.
+HINDI_HINT: चक्रवृद्धि ब्याज (ब्याज पर ब्याज)
+---
+TERM: simple interest
+PLAIN: Simple interest is calculated only on the original principal, not on accumulated interest. Formula: Interest = Principal × Rate × Time / 100. On ₹10,000 at 8% for 2 years = ₹1,600. Non-cumulative FDs that pay out interest regularly effectively use simple interest calculation. Cumulative FDs give more because they use compound interest.
+HINDI_HINT: साधारण ब्याज (सिर्फ मूलधन पर)
+---
+TERM: fixed vs floating rate FD
+PLAIN: A fixed rate FD locks in the interest rate for the entire tenor — you know exactly what you'll earn. A floating rate FD has an interest rate that changes based on RBI's repo rate. Fixed is safer and predictable — ideal when rates are currently high. Floating makes sense if you expect RBI to raise rates. Most FDs in India are fixed rate.
+HINDI_HINT: स्थिर बनाम परिवर्तनशील दर
+---
+TERM: NBFC vs bank FD
+PLAIN: NBFCs (Non-Banking Financial Companies) like Shriram Finance offer FDs at higher rates (8.5-9.5%) than banks but are NOT covered by DICGC insurance — if the NBFC fails, there's no government guarantee on your money. They are regulated by RBI but not as strictly as banks. Only invest in highly-rated NBFCs (AAA or AA+) and limit exposure to 10-15% of your savings. Banks are safer; NBFCs offer higher returns with higher risk.
+HINDI_HINT: NBFC vs बैंक (ज्यादा ब्याज, ज्यादा जोखिम)
+---
+TERM: small finance bank
+PLAIN: Small finance banks (SFBs) are RBI-licensed banks focused on serving small businesses and rural/semi-urban customers. Examples: AU, Ujjivan, Jana, Suryoday. They are fully regulated like commercial banks, offer DICGC insurance, and typically pay 0.5-1.5% more interest than large banks. They carry slightly higher risk than SBI or HDFC but are much safer than NBFCs. For amounts under ₹5 lakh (DICGC limit), SFBs offer excellent risk-adjusted returns.
+HINDI_HINT: लघु वित्त बैंक (ज्यादा ब्याज, DICGC बीमित)
+---
+TERM: post office time deposit
+PLAIN: Post Office Time Deposit (POTD) is India's most widely available government-backed FD scheme, available at any post office. It offers 6.9-7.5% interest for 1-5 year tenors (2024 rates). It is NOT covered by DICGC but is backed by the Government of India directly — making it safer than even DICGC-insured FDs. The 5-year POTD even qualifies for Section 80C tax deduction. Ideal for rural investors or those with no bank nearby.
+HINDI_HINT: डाकघर सावधि जमा (सरकारी गारंटी)
+---
