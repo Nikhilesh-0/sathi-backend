@@ -6,7 +6,7 @@ app = FastAPI(title="Sathi FD Advisor API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Tighten to your Vercel URL in production
+    allow_origins=["https://sathi-frontend.vercel.app"], # <-- NO trailing slash at the end!
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
