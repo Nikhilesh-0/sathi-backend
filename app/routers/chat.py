@@ -5,6 +5,7 @@ from app.services.gemini_service import get_gemini_response
 from app.services.booking_service import create_fd_booking
 from app.services.auth_service import verify_token, get_firestore_client
 from datetime import datetime
+import json
 
 router = APIRouter()
 
@@ -60,17 +61,26 @@ async def chat(
     if result["booking_update"]:
         booking_state = update_booking_state(booking_state, result["booking_update"])
 
-        # If all entities collected, create booking
-        if booking_state.get("stage") == "confirming":
-            booking_receipt = create_fd_booking(
-                principal_amount=booking_state["principal_amount"],
-                tenor_months=booking_state["tenor_months"],
-                pan_number=booking_state["pan_number"],
-                nominee_name=booking_state["nominee_name"],
-                fd_id=booking_state.get("selected_fd_id", "fd_002"),
-                user_id=user_id
-            )
-            booking_state["stage"] = "booked"
+    # Also check: if booking_state already had all 4 fields from previous turns
+    # and stage is still "confirming" (not yet "booked"), create the receipt now.
+    # This handles the case where the final entity was collected in a previous
+    # message but the receipt was never generated (e.g. Gemini didn't return
+    # a booking_update tag on the confirmation message).
+    if booking_state and booking_state.get("stage") == "confirming":
+        required = ["principal_amount", "tenor_months", "pan_number", "nominee_name"]
+        if all(booking_state.get(f) for f in required):
+            try:
+                booking_receipt = create_fd_booking(
+                    principal_amount=booking_state["principal_amount"],
+                    tenor_months=booking_state["tenor_months"],
+                    pan_number=booking_state["pan_number"],
+                    nominee_name=booking_state["nominee_name"],
+                    fd_id=booking_state.get("selected_fd_id", "fd_002"),
+                    user_id=user_id
+                )
+                booking_state["stage"] = "booked"
+            except Exception as e:
+                print(f"[Booking] Warning: could not create booking receipt: {e}")
 
     # Save message to Firestore
     try:
@@ -82,18 +92,30 @@ async def chat(
             .document(request.session_id)
         )
 
-        # Save both user message and assistant reply
         messages_ref = session_ref.collection("messages")
+
+        # Save user message
         messages_ref.add({
             "role": "user",
             "content": request.message,
             "timestamp": datetime.utcnow().isoformat()
         })
-        messages_ref.add({
+
+        # Save assistant reply — include receipt if generated so history loads it
+        assistant_doc = {
             "role": "assistant",
             "content": result["reply"],
             "timestamp": datetime.utcnow().isoformat()
-        })
+        }
+        if booking_receipt:
+            # Store as JSON string so Firestore handles it cleanly
+            assistant_doc["booking_receipt"] = json.dumps(booking_receipt)
+        if result.get("fd_cards"):
+            assistant_doc["fd_cards"] = json.dumps(result["fd_cards"])
+        if result.get("retrieved_context_used"):
+            assistant_doc["retrieved_context_used"] = True
+
+        messages_ref.add(assistant_doc)
 
         # Update session metadata
         session_ref.set({
