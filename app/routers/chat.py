@@ -54,35 +54,39 @@ async def chat(
         booking_state=request.booking_state
     )
 
-    # Update booking state if entities were extracted
+    # --- Booking state machine ---
+    # Start with whatever state the frontend sent us
     booking_state = request.booking_state
-    booking_receipt = None
 
+    # Merge any newly extracted entities from this message
     if result["booking_update"]:
         booking_state = update_booking_state(booking_state, result["booking_update"])
 
-    # Also check: if booking_state already had all 4 fields from previous turns
-    # and stage is still "confirming" (not yet "booked"), create the receipt now.
-    # This handles the case where the final entity was collected in a previous
-    # message but the receipt was never generated (e.g. Gemini didn't return
-    # a booking_update tag on the confirmation message).
-    if booking_state and booking_state.get("stage") == "confirming":
-        required = ["principal_amount", "tenor_months", "pan_number", "nominee_name"]
-        if all(booking_state.get(f) for f in required):
-            try:
-                booking_receipt = create_fd_booking(
-                    principal_amount=booking_state["principal_amount"],
-                    tenor_months=booking_state["tenor_months"],
-                    pan_number=booking_state["pan_number"],
-                    nominee_name=booking_state["nominee_name"],
-                    fd_id=booking_state.get("selected_fd_id", "fd_002"),
-                    user_id=user_id
-                )
-                booking_state["stage"] = "booked"
-            except Exception as e:
-                print(f"[Booking] Warning: could not create booking receipt: {e}")
+    # Generate receipt if all 4 fields are present.
+    # This check runs UNCONDITIONALLY — not gated on booking_update being present.
+    # Handles the common case where Gemini 2.5 Flash collects the last entity
+    # but skips the <booking_update> XML tag on the confirmation message.
+    booking_receipt = None
+    required = ["principal_amount", "tenor_months", "pan_number", "nominee_name"]
+    if (
+        booking_state
+        and all(booking_state.get(f) for f in required)
+        and booking_state.get("stage") != "booked"
+    ):
+        try:
+            booking_receipt = create_fd_booking(
+                principal_amount=booking_state["principal_amount"],
+                tenor_months=booking_state["tenor_months"],
+                pan_number=booking_state["pan_number"],
+                nominee_name=booking_state["nominee_name"],
+                fd_id=booking_state.get("selected_fd_id", "fd_002"),
+                user_id=user_id
+            )
+            booking_state["stage"] = "booked"
+        except Exception as e:
+            print(f"[Booking] Warning: could not create booking receipt: {e}")
 
-    # Save message to Firestore
+    # --- Save to Firestore ---
     try:
         db = get_firestore_client()
         session_ref = (
@@ -101,14 +105,13 @@ async def chat(
             "timestamp": datetime.utcnow().isoformat()
         })
 
-        # Save assistant reply — include receipt if generated so history loads it
+        # Save assistant reply — persist receipt and cards so history loads them
         assistant_doc = {
             "role": "assistant",
             "content": result["reply"],
             "timestamp": datetime.utcnow().isoformat()
         }
         if booking_receipt:
-            # Store as JSON string so Firestore handles it cleanly
             assistant_doc["booking_receipt"] = json.dumps(booking_receipt)
         if result.get("fd_cards"):
             assistant_doc["fd_cards"] = json.dumps(result["fd_cards"])
@@ -124,7 +127,6 @@ async def chat(
             "language": request.language
         }, merge=True)
     except Exception as e:
-        # Non-fatal — don't fail the response if Firestore has issues
         print(f"[Firestore] Warning: could not save message: {e}")
 
     return ChatResponse(
